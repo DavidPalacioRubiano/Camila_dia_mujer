@@ -1,0 +1,98 @@
+/* Restablecer márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body: centrar el contenido */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Establece el máximo ancho */
+    text-align: center;
+    display: block; /* Cambié de flex a block para simplificar */
+}
+
+/* Encabezado */
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #e91e63;
+    margin: 0;
+    padding: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Imagen */
+.image {
+    margin-bottom: 30px;
+}
+
+.woman-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensaje */
+.message {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Pie de página */
+footer {
+    font-size: 16px;
+    color: #e91e63;
+}
+
+footer strong {
+    font-weight: bold;
+}
+
+/* Media Query para móviles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .message p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .woman-image {
+        max-width: 90%;
+    }
+}
